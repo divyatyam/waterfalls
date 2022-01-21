@@ -43,14 +43,6 @@ class Random {
   random_int(a, b) {
     return Math.floor(this.random_num(a, b + 1));
   }
-  // random boolean with p as percent liklihood of true
-  random_bool(p) {
-    return this.random_dec() < p;
-  }
-  // random value in an array of items
-  random_choice(list) {
-    return list[this.random_int(0, list.length - 1)];
-  }
 
   random_shuffle(list) {
     let n = list.length;
